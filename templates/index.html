@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <!-- Hero Section -->
+
 <section class="hero" id="home">
 
     <div class="hero-content">
@@ -12,7 +14,7 @@
 
         <h1>
             A Cleaner Home,
-            <span> A Happier You.</span>
+            <span>A Happier You.</span>
         </h1>
 
         <p class="hero-description">
@@ -66,6 +68,7 @@
 
 
 <!-- Services Section -->
+
 <section class="services" id="services">
 
     <h2>Our Cleaning Services</h2>
@@ -78,64 +81,95 @@
     <div class="service-grid">
 
         <div class="service-card">
+
             <div class="service-icon">🏠</div>
+
             <h3>Home Cleaning</h3>
+
             <p>
                 Keep your entire home fresh and spotless with
                 our reliable regular cleaning service.
             </p>
+
         </div>
 
+
         <div class="service-card">
+
             <div class="service-icon">✨</div>
+
             <h3>Deep Cleaning</h3>
+
             <p>
                 A detailed cleaning service that removes
                 hidden dirt, dust, and buildup.
             </p>
+
         </div>
 
+
         <div class="service-card">
+
             <div class="service-icon">🛋️</div>
+
             <h3>Sofa Cleaning</h3>
+
             <p>
                 Refresh your sofas and furniture with
                 professional cleaning and care.
             </p>
+
         </div>
 
+
         <div class="service-card">
+
             <div class="service-icon">🍽️</div>
+
             <h3>Kitchen Cleaning</h3>
+
             <p>
                 Make your kitchen cleaner and more hygienic
                 with our detailed cleaning service.
             </p>
+
         </div>
 
+
         <div class="service-card">
+
             <div class="service-icon">🚿</div>
+
             <h3>Bathroom Cleaning</h3>
+
             <p>
                 Enjoy a fresh and hygienic bathroom with
                 our thorough cleaning service.
             </p>
+
         </div>
 
+
         <div class="service-card">
+
             <div class="service-icon">🪟</div>
+
             <h3>Window Cleaning</h3>
+
             <p>
                 Get brighter, cleaner windows with our
                 professional window cleaning service.
             </p>
+
         </div>
 
     </div>
 
 </section>
 
+
 <!-- Why Choose Us Section -->
+
 <section class="why-us" id="why-us">
 
     <h2>Why Choose SparkleHome?</h2>
@@ -148,46 +182,67 @@
     <div class="why-grid">
 
         <div class="why-card">
+
             <div class="why-icon">🛡️</div>
+
             <h3>Trusted & Reliable</h3>
+
             <p>
                 We provide dependable cleaning services with
                 a strong focus on customer satisfaction.
             </p>
+
         </div>
 
+
         <div class="why-card">
+
             <div class="why-icon">✨</div>
+
             <h3>Professional Quality</h3>
+
             <p>
                 Our team pays attention to detail to deliver
                 a clean and fresh home every time.
             </p>
+
         </div>
 
+
         <div class="why-card">
+
             <div class="why-icon">⏰</div>
+
             <h3>Always On Time</h3>
+
             <p>
                 We respect your schedule and aim to provide
                 our services exactly when you need them.
             </p>
+
         </div>
 
+
         <div class="why-card">
+
             <div class="why-icon">💚</div>
+
             <h3>Customer Focused</h3>
+
             <p>
                 Your comfort and satisfaction are our priority
                 from booking to the final clean.
             </p>
+
         </div>
 
     </div>
 
 </section>
 
+
 <!-- How It Works Section -->
+
 <section class="how-it-works" id="how-it-works">
 
     <h2>How It Works</h2>
@@ -249,7 +304,9 @@
 
 </section>
 
+
 <!-- Customer Reviews Section -->
+
 <section class="reviews" id="reviews">
 
     <h2>What Our Customers Say</h2>
@@ -299,7 +356,9 @@
 
 </section>
 
+
 <!-- CTA Promo Banner -->
+
 <section class="cta-banner">
 
     <h2>Ready for a Cleaner Home?</h2>
@@ -315,7 +374,9 @@
 
 </section>
 
+
 <!-- Inquiry Form Section -->
+
 <section class="inquiry" id="inquiry">
 
     <h2>Book a Cleaning Service</h2>
@@ -324,10 +385,20 @@
         Tell us what you need and our team will get back to you.
     </p>
 
-    <<form class="inquiry-form" method="post" action="/submit-inquiry">
+
+<form
+    class="inquiry-form"
+    method="post"
+    action="http://localhost/sparklehome/submit-inquiry.php"
+    enctype="multipart/form-data"
+>
+
+        <!-- Full Name -->
 
         <div class="form-group">
+
             <label for="name">Full Name</label>
+
             <input
                 type="text"
                 id="name"
@@ -335,10 +406,16 @@
                 placeholder="Enter your full name"
                 required
             >
+
         </div>
 
+
+        <!-- Email -->
+
         <div class="form-group">
+
             <label for="email">Email Address</label>
+
             <input
                 type="email"
                 id="email"
@@ -346,10 +423,16 @@
                 placeholder="Enter your email"
                 required
             >
+
         </div>
 
+
+        <!-- Phone -->
+
         <div class="form-group">
+
             <label for="phone">Phone Number</label>
+
             <input
                 type="tel"
                 id="phone"
@@ -357,26 +440,58 @@
                 placeholder="Enter your phone number"
                 required
             >
+
         </div>
 
+
+        <!-- Service -->
+
         <div class="form-group">
+
             <label for="service">Select Service</label>
 
             <select id="service" name="service" required>
 
-                <option value="">Choose a service</option>
-                <option value="home-cleaning">Home Cleaning</option>
-                <option value="deep-cleaning">Deep Cleaning</option>
-                <option value="sofa-cleaning">Sofa Cleaning</option>
-                <option value="kitchen-cleaning">Kitchen Cleaning</option>
-                <option value="bathroom-cleaning">Bathroom Cleaning</option>
-                <option value="window-cleaning">Window Cleaning</option>
+                <option value="">
+                    Choose a service
+                </option>
+
+                <option value="home-cleaning">
+                    Home Cleaning
+                </option>
+
+                <option value="deep-cleaning">
+                    Deep Cleaning
+                </option>
+
+                <option value="sofa-cleaning">
+                    Sofa Cleaning
+                </option>
+
+                <option value="kitchen-cleaning">
+                    Kitchen Cleaning
+                </option>
+
+                <option value="bathroom-cleaning">
+                    Bathroom Cleaning
+                </option>
+
+                <option value="window-cleaning">
+                    Window Cleaning
+                </option>
 
             </select>
+
         </div>
 
+
+        <!-- Additional Details -->
+
         <div class="form-group">
-            <label for="message">Additional Details</label>
+
+            <label for="message">
+                Additional Details
+            </label>
 
             <textarea
                 id="message"
@@ -384,7 +499,47 @@
                 rows="5"
                 placeholder="Tell us anything we should know..."
             ></textarea>
+
         </div>
+
+
+        <!-- Image Upload -->
+
+        <div class="form-group">
+
+            <label for="image">
+                Upload Image
+            </label>
+
+            <input
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+            >
+
+        </div>
+
+
+        <!-- Document / PDF Upload -->
+
+        <div class="form-group">
+
+            <label for="document">
+                Upload Document / PDF
+            </label>
+
+            <input
+                type="file"
+                id="document"
+                name="document"
+                accept=".pdf,.doc,.docx"
+            >
+
+        </div>
+
+
+        <!-- Submit Button -->
 
         <button type="submit" class="btn">
             Send Inquiry
@@ -395,5 +550,4 @@
 </section>
 
 
-
-{% endblock %} 
+{% endblock %}
